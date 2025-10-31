@@ -1,0 +1,471 @@
+/**
+ * @file style.css
+ * @author Alexander Alessi & Nicolas Alessi
+ * @description Main stylesheet
+ * @version 1.2.1
+ * @date 2025-10-02
+ *
+ * @copyright Copyright (c) 2025 Alexander & Nicolas Alessi
+ */
+
+/* --- Variables & Global Styles --- */
+
+:root {
+	--main-structural-color: #4D1979; 
+	--light-gray: #f4f4f9;
+	--dark-gray: #333;
+	--text-gray: #555;
+	--alex-brand-color: #8a4ed1; 
+	--nico-brand-color: #a67edc;
+	--line-thickness: 3px;
+	--timeline-color: var(--main-structural-color);
+	--flash-color: var(--alex-brand-color);
+	--icon-bg-color: var(--main-structural-color);
+	--icon-fg-color: white;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	margin: 0;
+	background-color: var(--light-gray);
+	color: var(--dark-gray);
+	line-height: 1.6;
+	overflow-x: hidden;
+	-webkit-tap-highlight-color: transparent; /* Prevents flashing on touch/click */
+	-webkit-overflow-scrolling: touch; /* Ensures smooth native-like scrolling on iOS */
+}
+
+a,
+a:visited {
+	color: var(--main-structural-color);
+	text-decoration: underline;
+	font-weight: 600;
+	transition: color 0.2s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* --- Header --- */
+
+.header {
+	text-align: center;
+	padding: 4rem 1rem;
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+	font-size: 2.5rem;
+	color: var(--main-structural-color);
+	margin: 0;
+}
+
+.header p {
+	font-size: 1.2rem;
+	color: var(--text-gray);
+	max-width: 700px;
+	margin: 0.5rem auto 0;
+	line-height: 1.5;
+}
+
+.byline {
+	display: block;
+	font-size: 1rem;
+	font-style: italic;
+	margin-top: 0.5rem;
+	color: #777;
+}
+
+/* --- Timeline Structure --- */
+
+.timeline {
+	position: relative;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+
+.timeline::before {
+	content: '';
+	position: absolute;
+	width: var(--line-thickness);
+	background-color: var(--timeline-color);
+	top: 90px;
+	bottom: 120px; 
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 0;
+}
+
+/* --- Origin Node --- */
+
+.origin-node .content {
+	border-top: 5px solid var(--timeline-color);
+	box-shadow: 0 5px 25px rgba(77, 25, 121, 0.2); 
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.6s 0.3s ease-out, transform 0.6s 0.3s ease-out;
+}
+
+/* --- Timeline Nodes (Start & End) --- */
+
+.timeline-node {
+	position: relative;
+	text-align: center;
+	margin-bottom: 50px;
+	z-index: 1;
+}
+
+.timeline-node .icon {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: var(--icon-bg-color); 
+	color: var(--icon-fg-color); 
+	font-size: 1.5rem;
+	border: 4px solid var(--timeline-color); 
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.timeline-node .content {
+	background-color: #fff;
+	padding: 40px;
+	border-radius: 8px;
+	box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+	margin-top: 15px;
+}
+
+.timeline-node h2 {
+	margin: 0;
+	color: var(--main-structural-color);
+}
+
+/* --- Timeline Events (Middle Section) --- */
+
+.divergence-container {
+	position: relative;
+	padding-top: 50px;
+}
+
+.timeline-event {
+	position: relative;
+	width: calc(50% - 40px);
+	padding: 20px 25px;
+	background-color: #fff;
+	border-radius: 8px;
+	margin-bottom: 30px;
+	box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+	z-index: 1;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Staggers the first set of events to load after the Origin Node */
+.timeline-event:nth-child(1),
+.timeline-event:nth-child(2) {
+	/* Increases delay to ensure the Origin Node is fully visible first */
+	transition-delay: 0.4s; /* CORRECTED */
+}
+
+.timeline-event p {
+  flex-grow: 1;
+}
+
+.timeline-event.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.timeline-event.left {
+	float: left;
+	clear: both;
+	text-align: right;
+}
+
+.timeline-event.right {
+	float: right;
+	clear: both;
+	text-align: left;
+}
+
+.timeline-event::after {
+	content: '';
+	position: absolute;
+	top: 25px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+
+/* Triangle connector colors use dynamic brand variables */
+.timeline-event.left::after {
+	right: -15px;
+	border-width: 10px 0 10px 15px;
+	border-color: transparent transparent transparent var(--alex-brand-color);
+}
+
+.timeline-event.right::after {
+	left: -15px;
+	border-width: 10px 15px 10px 0;
+	border-color: transparent var(--nico-brand-color) transparent transparent;
+}
+
+.timeline-event h3 {
+  margin-top: 0;
+}
+.timeline-event.left h3 {
+  color: var(--alex-brand-color);
+}
+.timeline-event.right h3 {
+  color: var(--nico-brand-color);
+}
+
+/* Colored footer uses dynamic brand variables */
+.event-footer {
+	padding: 8px 25px;
+	margin: 20px -25px -20px -25px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	color: white;
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+
+.timeline-event.left .event-footer {
+  background-color: var(--alex-brand-color);
+}
+
+.timeline-event.right .event-footer {
+  background-color: var(--nico-brand-color);
+}
+
+.divergence-container::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* --- Reconvergence Node (End) --- */
+
+.reconvergence-node {
+	clear: both;
+	padding-top: 40px;
+}
+
+.reconvergence-node .content {
+	border-top: 5px solid var(--timeline-color);
+	box-shadow: 0 5px 25px rgba(77, 25, 121, 0.2); 
+	padding: 45px;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.6s 0.3s ease-out, transform 0.6s 0.3s ease-out;
+}
+
+.individual-statements {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+	gap: 30px;
+}
+
+.statement {
+	width: 45%;
+	text-align: center;
+}
+
+.statement h4 {
+	color: var(--main-structural-color);
+	font-size: 1.2rem;
+}
+
+/* Headshot styles */
+.headshot {
+	width: 150px;
+	height: 150px;
+	margin: 0 auto 1.5rem auto;
+	border-radius: 50%;
+	border: 4px solid var(--timeline-color); 
+	overflow: hidden;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	background-color: var(--timeline-color);
+}
+
+.headshot img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	margin: -1px;
+	width: calc(100% + 2px);
+	height: calc(100% + 2px);
+}
+
+.reconvergence-node.visible .content {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.origin-node.visible .content {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* --- Animations --- */
+
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 var(--flash-color); }
+  70% { transform: scale(1.1); box-shadow: 0 0 10px 20px transparent; }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 transparent; }
+}
+
+.origin-node.visible .icon {
+  animation: pulse 1.5s ease-out;
+}
+
+.origin-node .icon {
+  transition: transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.reconvergence-node .icon {
+	transform: scale(0);
+	transition: transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.reconvergence-node.visible .icon {
+  transform: scale(1);
+}
+
+/* --- Footer --- */
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	background-color: #fff;
+	padding: 2rem 1.5rem;
+	border-top: 1px solid #ddd;
+	margin-top: 2rem;
+	color: #777;
+	font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+.github-link {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: #777;
+	font-weight: 600;
+	transition: color 0.2s ease;
+}
+
+.github-link:hover {
+	color: var(--main-structural-color);
+	text-decoration: none;
+}
+
+.github-link svg {
+	width: 24px;
+	height: 24px;
+	fill: currentColor;
+}
+
+/* --- Responsive Design --- */
+
+@media screen and (max-width: 768px) {
+	.timeline {
+		padding: 40px 10px;
+	}
+
+	.timeline::before {
+		left: 50px;
+		transform: none;
+	}
+
+	.origin-node::before {
+		left: 50px;
+		height: 250px; 
+		transform: translateX(-50%);
+	}
+
+	.timeline-event.left, .timeline-event.right {
+		width: calc(100% - 80px);
+		float: none;
+		margin-left: 80px;
+		text-align: left;
+	}
+
+	.timeline-event::after {
+		left: -15px !important;
+		right: auto !important;
+		border-width: 10px 15px 10px 0 !important;
+	}
+
+	.timeline-event.left::after {
+		border-color: transparent var(--alex-brand-color) transparent transparent !important;
+	}
+	.timeline-event.right::after {
+		border-color: transparent var(--nico-brand-color) transparent transparent !important;
+	}
+
+	.individual-statements {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.statement {
+		width: 100%;
+	}
+
+	.timeline-node .content {
+		padding: 20px;
+	}
+
+	.origin-node .icon, .reconvergence-node .icon {
+		transform: translateX(calc(-50vw + 50px));
+	}
+
+	@keyframes pulse-mobile {
+		0% { transform: translateX(calc(-50vw + 50px)) scale(1); box-shadow: 0 0 0 0 rgba(77, 25, 121, 0.7); }
+		70% { transform: translateX(calc(-50vw + 50px)) scale(1.1); box-shadow: 0 0 10px 20px rgba(77, 25, 121, 0); }
+		100% { transform: translateX(calc(-50vw + 50px)) scale(1); box-shadow: 0 0 0 0 rgba(77, 25, 121, 0); }
+	}
+
+	.origin-node.visible .icon {
+		animation-name: pulse-mobile;
+		animation-duration: 1.5s;
+		animation-timing-function: ease-out;
+	}
+
+	.reconvergence-node .icon {
+		transform: translateX(calc(-50vw + 50px)) scale(0);
+	}
+
+	.reconvergence-node.visible .icon {
+		transform: translateX(calc(-50vw + 50px)) scale(1);
+	}
+
+	footer {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 1rem;
+		padding: 2rem 1rem;
+	}
+}

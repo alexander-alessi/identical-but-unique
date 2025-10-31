@@ -1,0 +1,12 @@
+{
+	"environments": {
+		"stag": {
+			"bucket_url": "NA",
+			"cf_distro": "NA"
+		},
+		"prod": {
+			"bucket_url": "s3://identical-but-unique",
+			"cf_distro": "E1KNJJB8P5I1JM"
+		}
+	}
+}

@@ -63,9 +63,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		},
 		'twins-to-cougars.com': {
 			title: 'Our Story of Individuality',
-			name: 'the College of Charleston',
-			namePossessive: "the College of Charleston's",
-			mascotIcon: '🐱',
+			name: 'CofC',
+			namePossessive: "CofC's",
+			mascotIcon: '🐯',
 			mascotPlural: 'Cougars',
 			primaryColor: '#660000',    // Official College of Charleston Maroon (Alex)
 			secondaryColor: '#bfa87c',  // Official College of Charleston Gold (Nico)

@@ -61,6 +61,22 @@ document.addEventListener('DOMContentLoaded', function() {
 			alexResonance: "I've always dreamed of attending a university that not only studies business theory but actively churns out entrepreneurs. The kind of environment that produced leaders at startups like Snap and giants like Salesforce. I don't just want to study theories; I want to build. USC's ecosystem, with its deep connections to the Silicon Beach community, is the ideal place for me to transform my drive into successful innovations. At USC, I won't just be a student; I'll be a builder.",
 			nicoResonance: "For any entrepreneur growing up in California, USC represents the ultimate convergence point. The university's focus on innovation and its location in the heart of Los Angeles provide an amazing environment for someone like me to further develop my creativity and storytelling, and become the digital product leader I aspire to be. I am also drawn to the hands-on environment of the Annenberg Innovation Lab and Media Center because they offer an unparalleled testing ground for ideas."
 		},
+		'twins-to-cougars.com': {
+			title: 'Our Story of Individuality',
+			name: 'the College of Charleston',
+			namePossessive: "the College of Charleston's",
+			mascotIcon: '🐱',
+			mascotPlural: 'Cougars',
+			primaryColor: '#660000',    // Official College of Charleston Maroon (Alex)
+			secondaryColor: '#bfa87c',  // Official College of Charleston Gold (Nico)
+			timelineColor: '#660000',   // Official Maroon for structure
+			schoolFullName: 'the College of Charleston',
+			alexVision: "My goal at the College of Charleston is to major in Entrepreneurship and minor in Management. Through the <a href='https://charleston.edu/school-business/centers-initiatives/center-entrepreneurship/' target='_blank'>Center for Entrepreneurship</a>, I want to build the operational skills needed to scale a team and turn innovative ideas into thriving businesses.",
+			nicoVision: "I plan to major in Entrepreneurship and minor in Strategic Communication. At the <a href='https://charleston.edu/communication/index.php' target='_blank'>Department of Communication</a>, I want to explore how to deeply understand a user's needs and craft the product vision that brings a brand to life.",
+			faviconUrl: 'img/favicons/cougar.ico',
+			alexResonance: "The city of Charleston is beautiful and possesses a strong but almost undiscovered startup scene - a scene that I want to join and contribute to. The new entrepreneurship program at the College of Charleston is a perfect match for my ambitions to sharpen my entrepreneurial skills while learning from the best.",
+			nicoResonance: "The College of Charleston's rich history (the 13th oldest university in the US!) combined with a foundational entrepreneurship program is the perfect place for me to mature as a student, an entrepreneur, and a future community leader. The city's vibrant culture and growing startup ecosystem also provide an ideal backdrop for me to explore new ideas and bring them to life."
+		},
 		'twins-to-huskies.com': {
 			title: 'Our Story of Individuality',
 			name: 'UW',

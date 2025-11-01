@@ -61,11 +61,30 @@ document.addEventListener('DOMContentLoaded', function() {
 			alexResonance: "I've always dreamed of attending a university that not only studies business theory but actively churns out entrepreneurs. The kind of environment that produced leaders at startups like Snap and giants like Salesforce. I don't just want to study theories; I want to build. USC's ecosystem, with its deep connections to the Silicon Beach community, is the ideal place for me to transform my drive into successful innovations. At USC, I won't just be a student; I'll be a builder.",
 			nicoResonance: "For any entrepreneur growing up in California, USC represents the ultimate convergence point. The university's focus on innovation and its location in the heart of Los Angeles provide an amazing environment for someone like me to further develop my creativity and storytelling, and become the digital product leader I aspire to be. I am also drawn to the hands-on environment of the Annenberg Innovation Lab and Media Center because they offer an unparalleled testing ground for ideas."
 		},
+		'twins-to-bulldogs.com': {
+			title: 'Our Story of Individuality',
+			name: 'Gonzaga',
+			namePossessive: "Gonzaga's",
+			mascotIcon: '',
+			mascotSvg: '/img/mascots/bulldog.svg',
+			mascotSvgColor: '#F8F8F8',
+			mascotPlural: 'Bulldogs',
+			primaryColor: '#041E42',    // Official Gonzaga Navy Blue (Alex)
+			secondaryColor: '#C8102E',  // Official Gonzaga Athletic Red (Nico)
+			timelineColor: '#041E42',   // Official Navy for structure
+			schoolFullName: 'Gonzaga University',
+			alexVision: "My goal at Gonzaga is to major in Entrepreneurship and minor in Management. Through the <a href='https://www.gonzaga.edu/school-of-business-administration/undergraduate/business-administration/entrepreneurship-innovation' target='_blank'>Hogan Entrepreneurial Leadership Program</a>, I want to build the operational skills needed to scale a team and turn innovative ideas into thriving businesses.",
+			nicoVision: "I plan to major in Entrepreneurship and minor in Strategic Communication. At the <a href='https://www.gonzaga.edu/college-of-arts-sciences/departments/communication-studies' target='_blank'>Department of Communication Studies</a>, I want to explore how to deeply understand a user's needs and craft the product vision that brings a brand to life.",
+			faviconUrl: 'img/favicons/bulldog.ico',
+			alexResonance: "Spokane’s rising entrepreneurial scene, fueled by Gonzaga’s ties to the Inland Northwest, offers the ideal place for me to learn and grow. The Hogan Program’s focus on ethical leadership and real-world application aligns perfectly with my ambition to build businesses that are not only successful but also socially responsible.",
+			nicoResonance: "Gonzaga’s emphasis on ethical communication and debate, rooted in Jesuit values, resonates with my core belief system. After years in California’s sun, the Pacific Northwest’s thoughtful pace—its culture, landscape, and community—feels like the right next step for me."
+		},
 		'twins-to-cougars.com': {
 			title: 'Our Story of Individuality',
 			name: 'CofC',
 			namePossessive: "CofC's",
-			mascotIcon: '🐯',
+			mascotSvg: '/img/mascots/cougar.svg',
+			mascotSvgColor: '#bfa87c',
 			mascotPlural: 'Cougars',
 			primaryColor: '#660000',    // Official College of Charleston Maroon (Alex)
 			secondaryColor: '#bfa87c',  // Official College of Charleston Gold (Nico)
@@ -154,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Set the core structural color for the page
 	document.documentElement.style.setProperty('--timeline-color', data.timelineColor);
 
-	// --- NEW Block for Icon Styling ---
+	// Icon Styling ---
 	const iconBg = data.iconBgColor || data.timelineColor;
 	document.documentElement.style.setProperty('--icon-bg-color', iconBg);
 
@@ -164,7 +183,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// Update the content based on the data
 	document.getElementById('page-title').innerHTML = data.title;
-	document.getElementById('mascot-icon').innerHTML = data.mascotIcon;
 	document.getElementById('school-name').innerHTML = data.name;
 	document.getElementById('school-name-possessive').innerHTML = data.namePossessive;
 	document.getElementById('mascot-name-plural').innerHTML = data.mascotPlural;
@@ -176,7 +194,34 @@ document.addEventListener('DOMContentLoaded', function() {
 	document.getElementById('alex-resonance').innerHTML = data.alexResonance;
 	document.getElementById('nico-resonance').innerHTML = data.nicoResonance;
 
-	// --- 3. Animation Logic ---
+	// Special logic for the Mascot Icon (can be emoji or SVG)
+	const mascotContainer = document.getElementById('mascot-icon');
+	if (data.mascotSvg) {
+		fetch(data.mascotSvg)
+			.then(r => r.text())
+			.then(svgText => {
+				const parser = new DOMParser();
+				const svgDoc = parser.parseFromString(svgText, 'image/svg+xml');
+				const svg = svgDoc.querySelector('svg');
+				
+				if (svg) {
+					svg.style.width = '70%';
+					svg.style.height = '70%';
+					if (data.mascotSvgColor) {
+						svg.setAttribute('fill', data.mascotSvgColor);
+					}
+					mascotContainer.innerHTML = '';
+					mascotContainer.appendChild(svg);
+				}
+			})
+			.catch(() => {
+				mascotContainer.innerHTML = data.mascotIcon;
+			});
+	} else {
+		mascotContainer.innerHTML = data.mascotIcon;
+	}
+
+	// Animation Logic ---
 	const animatedElements = document.querySelectorAll('.timeline-event, .origin-node, .reconvergence-node');
 	const observer = new IntersectionObserver((entries) => {
 		entries.forEach(entry => {

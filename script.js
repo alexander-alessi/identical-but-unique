@@ -96,6 +96,22 @@ document.addEventListener('DOMContentLoaded', function() {
 			alexResonance: "The city of Charleston is beautiful and possesses a strong but almost undiscovered startup scene - a scene that I want to join and contribute to. The new entrepreneurship program at the College of Charleston is a perfect match for my ambitions to sharpen my entrepreneurial skills while learning from the best.",
 			nicoResonance: "The College of Charleston's rich history (the 13th oldest university in the US!) combined with a foundational entrepreneurship program is the perfect place for me to mature as a student, an entrepreneur, and a future community leader. The city's vibrant culture and growing startup ecosystem also provide an ideal backdrop for me to explore new ideas and bring them to life."
 		},
+		'twins-to-panthers.com': {
+			title: 'Our Story of Individuality',
+			name: 'Chapman',
+			namePossessive: "Chapman's",
+			mascotIcon: '🐆',
+			mascotPlural: 'Panthers',
+			primaryColor: '#A50034',    // Official Chapman Red (Alex)
+			secondaryColor: '#231F20',  // Official Panther Black (Nico)
+			timelineColor: '#A50034',   // Official Red for structure
+			schoolFullName: 'Chapman University',
+			alexVision: "My goal at Chapman is to major in Entrepreneurship and minor in Management. Through the <a href='https://www.chapman.edu/research/institutes-and-centers/leatherby-center/entrepreneurship-curriculum.aspx' target='_blank'>Leatherby Center for Entrepreneurship</a>, I want to build the operational skills needed to scale a team and turn innovative ideas into thriving businesses.",
+			nicoVision: "I plan to major in Entrepreneurship and minor in Strategic Communication. Within the <a href='https://www.chapman.edu/communication/index.aspx' target='_blank'>School of Communication</a>, I want to explore how to deeply understand a user's needs and craft the product vision that brings a brand to life.",
+			faviconUrl: 'img/favicons/panther.ico',
+			alexResonance: "Orange County’s entrepreneurial hub, with Chapman at its core, is where I want to study, learn and advance my entrepreneurial skills. The Leatherby Center’s incubator programs and startup resources align perfectly with my drive to build scalable businesses. Chapman also has small class sizes and small student to faculty ratios, which is exactly the type of learning environment I thrive in. I come from California roots and would love to study and live in the state I call home! ",
+			nicoResonance: "Chapman's entrepreneurship programs stand out among its peers, with a strong focus on business formation and ethics, combined with interesting classes and incubator programs. The community surrounding the school also feels like a small town within a huge metropolis, which is just what I am looking for. Having lived my entire life in a smaller California town, I am eager to experience the activity, action, and unique urban-suburban culture of Orange County, which is one of the most unique environments in the state I call home."
+		},
 		'twins-to-huskies.com': {
 			title: 'Our Story of Individuality',
 			name: 'UW',

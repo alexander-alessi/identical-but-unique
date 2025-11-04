@@ -137,7 +137,7 @@ def run_deploy(conf, env, proj_dir, profile):
 
     # ---- CloudFront cache invalidation -------------------------------
     cf_distro = c["environments"][env]["cf_distro"]
-    invalidation_path = "/index.html"
+    invalidation_path = "/*"    # Invalidate all paths
     timestamp = str(time.time()).replace(".", "")
 
     session = boto3.Session(profile_name=profile)

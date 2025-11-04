@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			title: 'Our Story of Individuality',
 			name: 'CofC',
 			namePossessive: "CofC's",
+			mascotIcon: '',
 			mascotSvg: '/img/mascots/cougar.svg',
 			mascotSvgColor: '#bfa87c',
 			mascotPlural: 'Cougars',
@@ -100,7 +101,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			title: 'Our Story of Individuality',
 			name: 'Chapman',
 			namePossessive: "Chapman's",
-			mascotIcon: '🐆',
+			mascotIcon: '',
+			mascotSvg: '/img/mascots/panther.svg',
 			mascotPlural: 'Panthers',
 			primaryColor: '#A50034',    // Official Chapman Red (Alex)
 			secondaryColor: '#231F20',  // Official Panther Black (Nico)
@@ -228,6 +230,9 @@ document.addEventListener('DOMContentLoaded', function() {
 					mascotContainer.innerHTML = '';
 					mascotContainer.appendChild(svg);
 
+					// If the SVG has a mascot-fill element, set its fill color
+					// If not, then mascotSvgColor does not need to be defined in
+					// the data dictionary.
 					const mascotPath = svg.querySelector('#mascot-fill');
 					if (mascotPath) {
 						mascotPath.setAttribute('fill', data.mascotSvgColor);

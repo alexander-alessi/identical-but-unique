@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			alexVision: "My goal at Chapman is to major in Entrepreneurship and minor in Management. Through the <a href='https://www.chapman.edu/research/institutes-and-centers/leatherby-center/entrepreneurship-curriculum.aspx' target='_blank'>Leatherby Center for Entrepreneurship</a>, I want to build the operational skills needed to scale a team and turn innovative ideas into thriving businesses.",
 			nicoVision: "I plan to major in Entrepreneurship and minor in Strategic Communication. Within the <a href='https://www.chapman.edu/communication/index.aspx' target='_blank'>School of Communication</a>, I want to explore how to deeply understand a user's needs and craft the product vision that brings a brand to life.",
 			faviconUrl: 'img/favicons/panther.ico',
-			alexResonance: "Orange County’s entrepreneurial hub, with Chapman at its core, is where I want to study, learn and advance my entrepreneurial skills. The Leatherby Center’s incubator programs and startup resources align perfectly with my drive to build scalable businesses. Chapman also has small class sizes and small student to faculty ratios, which is exactly the type of learning environment I thrive in. I come from California roots and would love to study and live in the state I call home! ",
+			alexResonance: "Orange County’s entrepreneurial hub, with Chapman at its core, is where I want to study, learn and advance my entrepreneurial skills. The Leatherby Center’s incubator programs and startup resources align perfectly with my drive to build scalable businesses. Chapman also has small class sizes and small student to faculty ratios, which is exactly the type of learning environment I thrive in. I come from California roots and would love to study and live in a completely different part of the state.",
 			nicoResonance: "Chapman's entrepreneurship programs stand out among its peers, with a strong focus on business formation and ethics, combined with interesting classes and incubator programs. The community surrounding the school also feels like a small town within a huge metropolis, which is just what I am looking for. Having lived my entire life in a smaller California town, I am eager to experience the activity, action, and unique urban-suburban culture of Orange County, which is one of the most unique environments in the state I call home."
 		},
 		'twins-to-huskies.com': {
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Set the core structural color for the page
 	document.documentElement.style.setProperty('--timeline-color', data.timelineColor);
 
-	// Icon Styling ---
+	// Icon Styling
 	const iconBg = data.iconBgColor || data.timelineColor;
 	document.documentElement.style.setProperty('--icon-bg-color', iconBg);
 
@@ -219,15 +219,19 @@ document.addEventListener('DOMContentLoaded', function() {
 				const parser = new DOMParser();
 				const svgDoc = parser.parseFromString(svgText, 'image/svg+xml');
 				const svg = svgDoc.querySelector('svg');
-				
+
 				if (svg) {
 					svg.style.width = '70%';
 					svg.style.height = '70%';
-					if (data.mascotSvgColor) {
-						svg.setAttribute('fill', data.mascotSvgColor);
-					}
+
+					// CLEAR the container first
 					mascotContainer.innerHTML = '';
 					mascotContainer.appendChild(svg);
+
+					const mascotPath = svg.querySelector('#mascot-fill');
+					if (mascotPath) {
+						mascotPath.setAttribute('fill', data.mascotSvgColor);
+					}
 				}
 			})
 			.catch(() => {
@@ -237,7 +241,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		mascotContainer.innerHTML = data.mascotIcon;
 	}
 
-	// Animation Logic ---
+	// Animation Logic
 	const animatedElements = document.querySelectorAll('.timeline-event, .origin-node, .reconvergence-node');
 	const observer = new IntersectionObserver((entries) => {
 		entries.forEach(entry => {

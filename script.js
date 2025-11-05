@@ -11,7 +11,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
 	// --- 1. Data Dictionary ---
-	// TCU Purple remains the fallback for primary elements (header, timeline)
 	const schoolData = {
 		'twins-to-frogs.com': {
 			title: 'Our Story of Individuality',
@@ -19,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			namePossessive: "TCU's",
 			mascotIcon: '🐸',
 			mascotPlural: 'Horned Frogs',
-			primaryColor: '#8a4ed1', // Light Purple (Alexander/Alex's color from original design)
-			secondaryColor: '#a67edc', // Slightly different purple (Nicolas/Nico's color)
+			primaryColor: '#8a4ed1', // Light Purple 
+			secondaryColor: '#a67edc', // Slightly different purple
 			timelineColor: '#4D1979',
 			schoolFullName: 'Texas Christian University',
 			alexVision: "My goal at TCU is to major in Entrepreneurship and minor in Management. Through the <a href='https://www.neeley.tcu.edu/Academic-Departments/Entrepreneurship-and-Innovation' target='_blank'>Neeley Department of Entrepreneurship and Innovation</a>, I want to build the operational skills needed to scale a team and turn innovative ideas into thriving businesses.",
@@ -35,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			namePossessive: "Tampa's",
 			mascotIcon: '⚔️',
 			mascotPlural: 'Spartans',
-			primaryColor: '#363737', // Black/Gray (Nico)
-			secondaryColor: '#B23A48', // Tampa's Red (Alex)
+			primaryColor: '#363737', // Black/Gray
+			secondaryColor: '#B23A48', // Tampa's Red
 			timelineColor: '#962832', // Slightly different red for the structural timeline
 			schoolFullName: 'the University of Tampa',
 			alexVision: "My goal at Tampa is to major in Entrepreneurship and minor in Management. Through the <a href='https://www.ut.edu/academics/sykes-college-of-business/centers-and-institutes/lowth-entrepreneurship-center' target='_blank'>Lowth Entrepreneurship Center</a>, I want to build the operational skills needed to scale a team and turn innovative ideas into thriving businesses.",
@@ -51,8 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			namePossessive: "USC's",
 			mascotIcon: '✌️',
 			mascotPlural: 'Trojans',
-			primaryColor: '#990000', // USC Cardinal Red (Alex)
-			secondaryColor: '#FFCC00', // USC Gold (Nico)
+			primaryColor: '#990000', // USC Cardinal Red
+			secondaryColor: '#FFCC00', // USC Gold
 			timelineColor: '#990000', // Cardinal Red for the structural timeline
 			schoolFullName: 'the University of Southern California',
 			alexVision: "My goal at USC is to major in Entrepreneurship and minor in Management. Through the <a href='https://www.marshall.usc.edu/departments/lloyd-greif-center-entrepreneurial-studies' target='_blank'>Greif Center for Entrepreneurial Studies</a>, I want to build the operational skills needed to scale a team and turn innovative ideas into thriving businesses.",
@@ -69,8 +68,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			mascotSvg: '/img/mascots/bulldog.svg',
 			mascotSvgColor: '#F8F8F8',
 			mascotPlural: 'Bulldogs',
-			primaryColor: '#041E42',    // Official Gonzaga Navy Blue (Alex)
-			secondaryColor: '#C8102E',  // Official Gonzaga Athletic Red (Nico)
+			primaryColor: '#041E42',    // Official Gonzaga Navy Blue
+			secondaryColor: '#C8102E',  // Official Gonzaga Athletic Red
 			timelineColor: '#041E42',   // Official Navy for structure
 			schoolFullName: 'Gonzaga University',
 			alexVision: "My goal at Gonzaga is to major in Entrepreneurship and minor in Management. Through the <a href='https://www.gonzaga.edu/school-of-business-administration/undergraduate/business-administration/entrepreneurship-innovation' target='_blank'>Hogan Entrepreneurial Leadership Program</a>, I want to build the operational skills needed to scale a team and turn innovative ideas into thriving businesses.",
@@ -87,8 +86,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			mascotSvg: '/img/mascots/cougar.svg',
 			mascotSvgColor: '#bfa87c',
 			mascotPlural: 'Cougars',
-			primaryColor: '#660000',    // Official College of Charleston Maroon (Alex)
-			secondaryColor: '#bfa87c',  // Official College of Charleston Gold (Nico)
+			primaryColor: '#660000',    // Official College of Charleston Maroon
+			secondaryColor: '#bfa87c',  // Official College of Charleston Gold
 			timelineColor: '#660000',   // Official Maroon for structure
 			schoolFullName: 'the College of Charleston',
 			alexVision: "My goal at the College of Charleston is to major in Entrepreneurship and minor in Management. Through the <a href='https://charleston.edu/school-business/centers-initiatives/center-entrepreneurship/' target='_blank'>Center for Entrepreneurship</a>, I want to build the operational skills needed to scale a team and turn innovative ideas into thriving businesses.",
@@ -104,8 +103,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			mascotIcon: '',
 			mascotSvg: '/img/mascots/panther.svg',
 			mascotPlural: 'Panthers',
-			primaryColor: '#A50034',    // Official Chapman Red (Alex)
-			secondaryColor: '#231F20',  // Official Panther Black (Nico)
+			primaryColor: '#A50034',    // Official Chapman Red
+			secondaryColor: '#231F20',  // Official Panther Black
 			timelineColor: '#A50034',   // Official Red for structure
 			schoolFullName: 'Chapman University',
 			alexVision: "My goal at Chapman is to major in Entrepreneurship and minor in Management. Through the <a href='https://www.chapman.edu/research/institutes-and-centers/leatherby-center/entrepreneurship-curriculum.aspx' target='_blank'>Leatherby Center for Entrepreneurship</a>, I want to build the operational skills needed to scale a team and turn innovative ideas into thriving businesses.",
@@ -114,14 +113,32 @@ document.addEventListener('DOMContentLoaded', function() {
 			alexResonance: "Orange County’s entrepreneurial hub, with Chapman at its core, is where I want to study, learn and advance my entrepreneurial skills. The Leatherby Center’s incubator programs and startup resources align perfectly with my drive to build scalable businesses. Chapman also has small class sizes and small student to faculty ratios, which is exactly the type of learning environment I thrive in. I come from California roots and would love to study and live in a completely different part of the state.",
 			nicoResonance: "Chapman's entrepreneurship programs stand out among its peers, with a strong focus on business formation and ethics, combined with interesting classes and incubator programs. The community surrounding the school also feels like a small town within a huge metropolis, which is just what I am looking for. Having lived my entire life in a smaller California town, I am eager to experience the activity, action, and unique urban-suburban culture of Orange County, which is one of the most unique environments in the state I call home."
 		},
+		'twins-to-pelicans.com': {
+				title: 'Our Story of Individuality',
+				name: 'Tulane',
+				namePossessive: "Tulane's",
+				mascotIcon: '',
+				mascotSvg: '/img/mascots/pelican.svg',
+				mascotSvgColor: '#F8F8F8',
+				mascotPlural: 'Pelicans',
+				primaryColor: '#004D3D',    // Official Tulane Olive Green 
+				secondaryColor: '#006699',  // Official Tulane Sky Blue
+				timelineColor: '#003322',   // Deep Tulane Green for structural elements
+				schoolFullName: 'Tulane University',
+				alexVision: "My core focus is on team building, resource allocation, and business strategy, which I plan to advance at the <a href='https://freeman.tulane.edu/' target='_blank'>A. B. Freeman School of Business</a> through the Management major and Entrepreneurial Business minor. I’ll sharpen these skills through the Entrepreneurship Specialization, hands-on prototyping in the Lepage Center MakerSpace, and pitching at the Tulane Business Model Competition judged by New Orleans VCs.",
+				nicoVision: "As every competent product manager needs a strong understanding of business operations, I intend to pursue Business Administration as my primary major at the A. B. Freeman School of Business, with a second-choice major in Communication in the <a href='https://liberalarts.tulane.edu/' target='_blank'>School of Liberal Arts</a>. I’ll hone my ability to communicate with users and translate needs into product visions through the Product Management Certificate and live-client projects at the Phyllis M. Taylor Center for Social Innovation & Design Thinking.",
+				faviconUrl: 'img/favicons/pelican.ico',
+				alexResonance: "New Orleans’ resilient, improvisational spirit is the ultimate ops lab—I want to build ventures in a city that rebuilds itself daily. Tulane’s Freeman School and the vibrant New Orleans entrepreneurial ecosystem provide the perfect blend of rigorous academics and real-world startup access. The Lepage Center, MakerSpace, and Tulane Business Model Competition are exactly where I want to prototype, pitch, and scale my next ventures.",
+				nicoResonance: "Tulane is the only place that combines deep product strategy training with direct access to a growing innovation hub. The Taylor Center’s design-thinking labs and the city’s startup scene will let me test user empathy at scale—turning insights into features that actually matter. I’m also drawn to New Orleans not just for Tulane, but for a city that epitomises the comeback story. I want to tell the same story as a young product leader and business founder."
+		},
 		'twins-to-huskies.com': {
 			title: 'Our Story of Individuality',
 			name: 'UW',
 			namePossessive: "UW's",
 			mascotIcon: '🐺',
 			mascotPlural: 'Huskies',
-			primaryColor: '#4B2E83',    // UW Purple (Alex)
-			secondaryColor: '#C8A872',  // UW Gold (Nico). Note: not pure gold for better contrast
+			primaryColor: '#4B2E83',    // UW Purple
+			secondaryColor: '#C8A872',  // UW Gold. Note: not pure gold for better contrast
 			timelineColor: '#2F0082',   // Deep UW Purple for structure
 			schoolFullName: 'the University of Washington',
 			alexVision: "My goal at UW is to major in Entrepreneurship and minor in Management. Through the <a href='https://foster.uw.edu/centers/buerk-ctr-entrepreneurship/' target='_blank'>Buerk Center for Entrepreneurship</a>, I want to build the operational skills needed to scale a team and turn innovative ideas into thriving businesses.",
@@ -136,8 +153,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			namePossessive: "the UC's",
 			mascotIcon: '🎓',
 			mascotPlural: 'UC students',
-			primaryColor: '#005696', // Alexander Accent (Royal Blue)
-			secondaryColor: '#FDB515', // Nicolas Accent (UC Gold)
+			primaryColor: '#005696', // Royal Blue
+			secondaryColor: '#FDB515', // UC Gold
 			timelineColor: '#003262', // Structural (Darker UC Navy Blue)
 			iconBgColor: '#CBCBCB', // Light grey background for visibility
 			schoolFullName: 'the University of California',

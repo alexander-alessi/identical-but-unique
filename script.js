@@ -147,6 +147,24 @@ document.addEventListener('DOMContentLoaded', function() {
 			alexResonance: "Seattle is home to some of the most famous technology startups the world has ever known, like Microsoft and Amazon. This is the perfect place to gain inspiration while learning from the amazing teachers and programs that UW has to offer. The University's proximity to this startup ecosystem, combined with the Buerk Center’s hands-on startup programs, are the perfect ingredients to power my entrepreneurial journey.",
 			nicoResonance: "UW’s blend of innovation and entrepreneurship, set against Seattle’s creative energy, is where I can see myself thriving as a product leader. The Department of Communication and the CoMotion incubator offer the ideal lab to test ideas with real users. I also love the pacific northwest. Having lived my entire life in California, I would welcome the opportunity to experience a completely different geography, culture and climate and Seattle is one of most unique environments in the country."
 		},
+		'twins-to-prowlers.com': {
+			title: 'Our Story of Individuality',
+			name: 'HPU',
+			namePossessive: "HPU's",
+			mascotIcon: '',
+			mascotSvg: '/img/mascots/panther.svg',
+			mascotPlural: 'Panthers',
+			primaryColor: '#330072',    // Official High Point Purple
+			secondaryColor: '#9678D3',  // White (clean contrast with purple)
+			timelineColor: '#330072',   // Deep purple for structural elements
+			iconBgColor: '#9678D3', // Light purple background for visibility
+			schoolFullName: 'High Point University',
+			alexVision: "My goal at HPU is to major in Entrepreneurship and minor in Management. Through the <a href='https://www.highpoint.edu/entrepreneurship/' target='_blank'>Congdon School of Entrepreneurship</a>, I want to build the operational skills needed to scale a team and turn innovative ideas into thriving businesses.",
+			nicoVision: "I plan to major in Entrepreneurship and minor in Strategic Communication. At the <a href='https://www.highpoint.edu/communication/' target='_blank'>Nido R. Qubein School of Communication</a>, I want to explore how to deeply understand a user's needs and craft the product vision that brings a brand to life.",
+			faviconUrl: 'img/favicons/panther.ico',
+			alexResonance: "High Point’s explosive growth and entrepreneurial energy mirror the kind of high-impact environment I thrive in. The Congdon School’s hands-on incubator, pitch competitions, and access to real mentors will let me turn operational frameworks into funded ventures.",
+			nicoResonance: "HPU’s blend of communication strategy and entrepreneurial action is where I’ll forge my voice as a product leader. The Qubein School’s media labs and the campus-wide focus on innovation give me the perfect stage to test user stories at scale. I want to be part of a university that doesn’t just teach growth, it lives it."
+		},
 		'identical-but-unique.com': {
 			title: 'Our Story of Individuality',
 			name: 'UC',

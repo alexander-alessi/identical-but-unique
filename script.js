@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			title: 'Our Story of Individuality',
 			name: 'USD',
 			namePossessive: "USD's",
-			mascotIcon: '🐂',
+			mascotIcon: '🤠',
 			mascotPlural: 'Toreros',
 			primaryColor: '#005596',    // Official USD Blue
 			secondaryColor: '#0DA851',  // Official USD Green
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			schoolFullName: 'the University of San Diego',
 			alexVision: "My goal at USD is to major in Entrepreneurship and minor in Management. Through the <a href='https://www.sandiego.edu/business/centers/catalyzer/' target='_blank'>Entrepreneurship and Innovation Catalyzer</a>, I want to build the operational skills needed to scale a team and turn innovative ideas into thriving businesses.",
 			nicoVision: "I plan to major in Entrepreneurship and minor in Strategic Communication. At the <a href='https://www.sandiego.edu/cas/communication-studies/' target='_blank'>Department of Communication</a>, I want to explore how to deeply understand a user's needs and craft the product vision that brings a brand to life.",
-			faviconUrl: 'img/favicons/bull.ico',
+			faviconUrl: 'img/favicons/matador.ico',
 			alexResonance: "USD's stunning campus, perched above San Diego with views of the Pacific, represents the perfect environment to build something meaningful. The university's Catholic values and emphasis on changemaker education align with my vision of entrepreneurship as a force for good. San Diego's thriving biotech and startup scene, combined with USD's intimate class sizes and strong mentorship, create the ideal conditions for me to develop as both a founder and a leader.",
 			nicoResonance: "The University of San Diego's focus on ethical communication and its Changemaker Hub resonate with my belief that products should solve real problems for real people. The campus beauty and contemplative atmosphere provide the perfect setting to think deeply about user needs and craft compelling narratives. As a California native, studying in San Diego offers the chance to experience a different part of my home state while building a foundation in both business strategy and human-centered design."
 		},

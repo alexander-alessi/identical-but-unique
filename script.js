@@ -60,59 +60,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			alexResonance: "I've always dreamed of attending a university that not only studies business theory but actively churns out entrepreneurs. The kind of environment that produced leaders at startups like Snap and giants like Salesforce. I don't just want to study theories; I want to build. USC's ecosystem, with its deep connections to the Silicon Beach community, is the ideal place for me to transform my drive into successful innovations. At USC, I won't just be a student; I'll be a builder.",
 			nicoResonance: "For any entrepreneur growing up in California, USC represents the ultimate convergence point. The university's focus on innovation and its location in the heart of Los Angeles provide an amazing environment for someone like me to further develop my creativity and storytelling, and become the digital product leader I aspire to be. I am also drawn to the hands-on environment of the Annenberg Innovation Lab and Media Center because they offer an unparalleled testing ground for ideas."
 		},
-		'twins-to-bulldogs.com': {
-			title: 'Our Story of Individuality',
-			name: 'Gonzaga',
-			namePossessive: "Gonzaga's",
-			mascotIcon: '',
-			mascotSvg: '/img/mascots/bulldog.svg',
-			mascotSvgColor: '#F8F8F8',
-			mascotPlural: 'Bulldogs',
-			primaryColor: '#041E42',    // Official Gonzaga Navy Blue
-			secondaryColor: '#C8102E',  // Official Gonzaga Athletic Red
-			timelineColor: '#041E42',   // Official Navy for structure
-			schoolFullName: 'Gonzaga University',
-			alexVision: "My goal at Gonzaga is to major in Entrepreneurship and minor in Management. Through the <a href='https://www.gonzaga.edu/school-of-business-administration/undergraduate/business-administration/entrepreneurship-innovation' target='_blank'>Hogan Entrepreneurial Leadership Program</a>, I want to build the operational skills needed to scale a team and turn innovative ideas into thriving businesses.",
-			nicoVision: "I plan to major in Entrepreneurship and minor in Strategic Communication. At the <a href='https://www.gonzaga.edu/college-of-arts-sciences/departments/communication-studies' target='_blank'>Department of Communication Studies</a>, I want to explore how to deeply understand a user's needs and craft the product vision that brings a brand to life.",
-			faviconUrl: 'img/favicons/bulldog.ico',
-			alexResonance: "Spokane’s rising entrepreneurial scene, fueled by Gonzaga’s ties to the Inland Northwest, offers the ideal place for me to learn and grow. The Hogan Program’s focus on ethical leadership and real-world application aligns perfectly with my ambition to build businesses that are not only successful but also socially responsible.",
-			nicoResonance: "Gonzaga’s emphasis on ethical communication and debate, rooted in Jesuit values, resonates with my core belief system. After years in California’s sun, the Pacific Northwest’s thoughtful pace—its culture, landscape, and community—feels like the right next step for me."
-		},
-		'twins-to-cougars.com': {
-			title: 'Our Story of Individuality',
-			name: 'CofC',
-			namePossessive: "CofC's",
-			mascotIcon: '',
-			mascotSvg: '/img/mascots/cougar.svg',
-			mascotSvgColor: '#bfa87c',
-			mascotPlural: 'Cougars',
-			primaryColor: '#660000',    // Official College of Charleston Maroon
-			secondaryColor: '#bfa87c',  // Official College of Charleston Gold
-			timelineColor: '#660000',   // Official Maroon for structure
-			schoolFullName: 'the College of Charleston',
-			alexVision: "My goal at the College of Charleston is to major in Entrepreneurship and minor in Management. Through the <a href='https://charleston.edu/school-business/centers-initiatives/center-entrepreneurship/' target='_blank'>Center for Entrepreneurship</a>, I want to build the operational skills needed to scale a team and turn innovative ideas into thriving businesses.",
-			nicoVision: "I plan to major in Entrepreneurship and minor in Strategic Communication. At the <a href='https://charleston.edu/communication/index.php' target='_blank'>Department of Communication</a>, I want to explore how to deeply understand a user's needs and craft the product vision that brings a brand to life.",
-			faviconUrl: 'img/favicons/cougar.ico',
-			alexResonance: "The city of Charleston is beautiful and possesses a strong but almost undiscovered startup scene - a scene that I want to join and contribute to. The new entrepreneurship program at the College of Charleston is a perfect match for my ambitions to sharpen my entrepreneurial skills while learning from the best.",
-			nicoResonance: "The College of Charleston's rich history (the 13th oldest university in the US!) combined with a foundational entrepreneurship program is the perfect place for me to mature as a student, an entrepreneur, and a future community leader. The city's vibrant culture and growing startup ecosystem also provide an ideal backdrop for me to explore new ideas and bring them to life."
-		},
-		'twins-to-panthers.com': {
-			title: 'Our Story of Individuality',
-			name: 'Chapman',
-			namePossessive: "Chapman's",
-			mascotIcon: '',
-			mascotSvg: '/img/mascots/panther.svg',
-			mascotPlural: 'Panthers',
-			primaryColor: '#A50034',    // Official Chapman Red
-			secondaryColor: '#231F20',  // Official Panther Black
-			timelineColor: '#A50034',   // Official Red for structure
-			schoolFullName: 'Chapman University',
-			alexVision: "My goal at Chapman is to major in Entrepreneurship and minor in Management. Through the <a href='https://www.chapman.edu/research/institutes-and-centers/leatherby-center/entrepreneurship-curriculum.aspx' target='_blank'>Leatherby Center for Entrepreneurship</a>, I want to build the operational skills needed to scale a team and turn innovative ideas into thriving businesses.",
-			nicoVision: "I plan to major in Entrepreneurship and minor in Strategic Communication. Within the <a href='https://www.chapman.edu/communication/index.aspx' target='_blank'>School of Communication</a>, I want to explore how to deeply understand a user's needs and craft the product vision that brings a brand to life.",
-			faviconUrl: 'img/favicons/panther.ico',
-			alexResonance: "Orange County’s entrepreneurial hub, with Chapman at its core, is where I want to study, learn and advance my entrepreneurial skills. The Leatherby Center’s incubator programs and startup resources align perfectly with my drive to build scalable businesses. Chapman also has small class sizes and small student to faculty ratios, which is exactly the type of learning environment I thrive in. I come from California roots and would love to study and live in a completely different part of the state.",
-			nicoResonance: "Chapman's entrepreneurship programs stand out among its peers, with a strong focus on business formation and ethics, combined with interesting classes and incubator programs. The community surrounding the school also feels like a small town within a huge metropolis, which is just what I am looking for. Having lived my entire life in a smaller California town, I am eager to experience the activity, action, and unique urban-suburban culture of Orange County, which is one of the most unique environments in the state I call home."
-		},
 		'twins-to-pelicans.com': {
 				title: 'Our Story of Individuality',
 				name: 'Tulane',
@@ -147,23 +94,37 @@ document.addEventListener('DOMContentLoaded', function() {
 			alexResonance: "Seattle is home to some of the most famous technology startups the world has ever known, like Microsoft and Amazon. This is the perfect place to gain inspiration while learning from the amazing teachers and programs that UW has to offer. The University's proximity to this startup ecosystem, combined with the Buerk Center’s hands-on startup programs, are the perfect ingredients to power my entrepreneurial journey.",
 			nicoResonance: "UW’s blend of innovation and entrepreneurship, set against Seattle’s creative energy, is where I can see myself thriving as a product leader. The Department of Communication and the CoMotion incubator offer the ideal lab to test ideas with real users. I also love the pacific northwest. Having lived my entire life in California, I would welcome the opportunity to experience a completely different geography, culture and climate and Seattle is one of most unique environments in the country."
 		},
-		'twins-to-prowlers.com': {
+		'twins-to-lions.com': {
 			title: 'Our Story of Individuality',
-			name: 'HPU',
-			namePossessive: "HPU's",
-			mascotIcon: '',
-			mascotSvg: '/img/mascots/panther.svg',
-			mascotPlural: 'Panthers',
-			primaryColor: '#330072',    // Official High Point Purple
-			secondaryColor: '#9678D3',  // White (clean contrast with purple)
-			timelineColor: '#330072',   // Deep purple for structural elements
-			iconBgColor: '#9678D3', // Light purple background for visibility
-			schoolFullName: 'High Point University',
-			alexVision: "My goal at HPU is to major in Entrepreneurship and minor in Management. Through the <a href='https://www.highpoint.edu/entrepreneurship/' target='_blank'>Congdon School of Entrepreneurship</a>, I want to build the operational skills needed to scale a team and turn innovative ideas into thriving businesses.",
-			nicoVision: "I plan to major in Entrepreneurship and minor in Strategic Communication. At the <a href='https://www.highpoint.edu/communication/' target='_blank'>Nido R. Qubein School of Communication</a>, I want to explore how to deeply understand a user's needs and craft the product vision that brings a brand to life.",
-			faviconUrl: 'img/favicons/panther.ico',
-			alexResonance: "High Point’s explosive growth and entrepreneurial energy mirror the kind of high-impact environment I thrive in. The Congdon School’s hands-on incubator, pitch competitions, and access to real mentors will let me turn operational frameworks into funded ventures.",
-			nicoResonance: "HPU’s blend of communication strategy and entrepreneurial action is where I’ll forge my voice as a product leader. The Qubein School’s media labs and the campus-wide focus on innovation give me the perfect stage to test user stories at scale. I want to be part of a university that doesn’t just teach growth, it lives it."
+			name: 'LMU',
+			namePossessive: "LMU's",
+			mascotIcon: '🦁',
+			mascotPlural: 'Lions',
+			primaryColor: '#8D2127',    // Official LMU Crimson Red
+			secondaryColor: '#00395E',  // Official LMU Navy Blue
+			timelineColor: '#8D2127',   // Crimson for structural elements
+			schoolFullName: 'Loyola Marymount University',
+			alexVision: "My goal at LMU is to major in Entrepreneurship and minor in Management. Through the <a href='https://cba.lmu.edu/centers/entrepreneurship/' target='_blank'>Fred Kiesner Center for Entrepreneurship</a>, I want to build the operational skills needed to scale a team and turn innovative ideas into thriving businesses.",
+			nicoVision: "I plan to major in Entrepreneurship and minor in Strategic Communication. At the <a href='https://cfa.lmu.edu/programs/communication-studies/' target='_blank'>Bellarmine College of Liberal Arts</a>, I want to explore how to deeply understand a user's needs and craft the product vision that brings a brand to life.",
+			faviconUrl: 'img/favicons/lion.ico',
+			alexResonance: "LMU's hilltop campus overlooking Silicon Beach is exactly where I want to launch my entrepreneurial journey. The Fred Kiesner Center's hands-on programs and the university's deep commitment to service and ethical leadership align perfectly with my goal to build businesses that create meaningful impact. Being in Los Angeles with access to the startup ecosystem while grounded in Jesuit values is the ideal combination for me.",
+			nicoResonance: "LMU's Jesuit tradition of educating the whole person resonates deeply with my belief that great products require both technical skill and human empathy. The location on the bluffs between LA's entertainment industry and Silicon Beach provides the perfect backdrop to study how brands connect with audiences. I'm drawn to a university that values both innovation and ethics—exactly what I need to become a product leader who builds with purpose."
+		},
+		'twins-to-toreros.com': {
+			title: 'Our Story of Individuality',
+			name: 'USD',
+			namePossessive: "USD's",
+			mascotIcon: '🐂',
+			mascotPlural: 'Toreros',
+			primaryColor: '#005596',    // Official USD Blue
+			secondaryColor: '#0DA851',  // Official USD Green
+			timelineColor: '#003B5C',   // Deep blue for structural elements
+			schoolFullName: 'the University of San Diego',
+			alexVision: "My goal at USD is to major in Entrepreneurship and minor in Management. Through the <a href='https://www.sandiego.edu/business/centers/catalyzer/' target='_blank'>Entrepreneurship and Innovation Catalyzer</a>, I want to build the operational skills needed to scale a team and turn innovative ideas into thriving businesses.",
+			nicoVision: "I plan to major in Entrepreneurship and minor in Strategic Communication. At the <a href='https://www.sandiego.edu/cas/communication-studies/' target='_blank'>Department of Communication</a>, I want to explore how to deeply understand a user's needs and craft the product vision that brings a brand to life.",
+			faviconUrl: 'img/favicons/bull.ico',
+			alexResonance: "USD's stunning campus, perched above San Diego with views of the Pacific, represents the perfect environment to build something meaningful. The university's Catholic values and emphasis on changemaker education align with my vision of entrepreneurship as a force for good. San Diego's thriving biotech and startup scene, combined with USD's intimate class sizes and strong mentorship, create the ideal conditions for me to develop as both a founder and a leader.",
+			nicoResonance: "The University of San Diego's focus on ethical communication and its Changemaker Hub resonate with my belief that products should solve real problems for real people. The campus beauty and contemplative atmosphere provide the perfect setting to think deeply about user needs and craft compelling narratives. As a California native, studying in San Diego offers the chance to experience a different part of my home state while building a foundation in both business strategy and human-centered design."
 		},
 		'identical-but-unique.com': {
 			title: 'Our Story of Individuality',

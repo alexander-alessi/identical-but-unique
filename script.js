@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			title: 'Our Story of Individuality',
 			name: 'USD',
 			namePossessive: "USD's",
-			mascotIcon: '🕺',
+			mascotIcon: '🐂',
 			mascotPlural: 'Toreros',
 			primaryColor: '#005596',    // Official USD Blue
 			secondaryColor: '#0DA851',  // Official USD Green
